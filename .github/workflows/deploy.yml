@@ -70,12 +70,12 @@ jobs:
             COLOR="*Cancelled*"
           fi
 
-          MESSAGE="${ICON} *GitHub Action Notification*\%0A\
-          🧱 Repo: [${{ github.repository }}](https://github.com/${{ github.repository }})\%0A\
-          🌿 Branch: \`${{ github.ref_name }}\`\%0A\
+          MESSAGE="${ICON} *GitHub Action Notification*\%0A
+          🧱 Repo: [${{ github.repository }}](https://github.com/${{ github.repository }})\%0A
+          🌿 Branch: \`${{ github.ref_name }}\`\%0A
           👤 Author: *${{ github.actor }}*\%0A\
-          💬 Commit: [${{ github.sha }}](https://github.com/${{ github.repository }}/commit/${{ github.sha }})\%0A\
-          🧰 Workflow: *${{ github.workflow }}* → *${{ github.job }}*\%0A\
+          💬 Commit: [${{ github.sha }}](https://github.com/${{ github.repository }}/commit/${{ github.sha }})\%0A
+          🧰 Workflow: *${{ github.workflow }}* → *${{ github.job }}*\%0A
           📊 Status: ${COLOR}\%0A\
           🔗 [View Run Logs](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})"
 
