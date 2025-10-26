@@ -70,13 +70,13 @@ jobs:
             COLOR="*Cancelled*"
           fi
 
-          MESSAGE="${ICON} *GitHub Action Notification*\n\
-          🧱 Repo: [${{ github.repository }}](https://github.com/${{ github.repository }})\n\
-          🌿 Branch: \`${{ github.ref_name }}\`\n\
-          👤 Author: *${{ github.actor }}*\n\
-          💬 Commit: [${{ github.sha }}](https://github.com/${{ github.repository }}/commit/${{ github.sha }})\n\
-          🧰 Workflow: *${{ github.workflow }}* → *${{ github.job }}*\n\
-          📊 Status: ${COLOR}\n\
+          MESSAGE="${ICON} *GitHub Action Notification*\%0A\
+          🧱 Repo: [${{ github.repository }}](https://github.com/${{ github.repository }})\%0A\
+          🌿 Branch: \`${{ github.ref_name }}\`\%0A\
+          👤 Author: *${{ github.actor }}*\%0A\
+          💬 Commit: [${{ github.sha }}](https://github.com/${{ github.repository }}/commit/${{ github.sha }})\%0A\
+          🧰 Workflow: *${{ github.workflow }}* → *${{ github.job }}*\%0A\
+          📊 Status: ${COLOR}\%0A\
           🔗 [View Run Logs](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})"
 
           curl -s -X POST "https://api.telegram.org/bot${BOT_TOKEN}/sendMessage" \
