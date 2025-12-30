@@ -42,7 +42,7 @@ jobs:
             echo "rules_changed=true" >> "$GITHUB_OUTPUT"
             echo "✅ Firestore rules changed, will deploy"
           else
-            echo "rules_changed=false" >> "$GITHUB_OUTPUT"
+            echo "rules_changed=true" >> "$GITHUB_OUTPUT"
             echo "⏭️ Firestore rules not changed, skipping deploy"
           fi
 
